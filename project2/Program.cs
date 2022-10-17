@@ -47,4 +47,21 @@ namespace QuickSort
             arr[x] = arr[y];
             arr[y] = temp;
         }
+        public void q_sort(int low, int high)
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
+
+            //Partition the list into two parts
+            //One containing elements less that or equal to pivot
+            //Outher containing elements greater than pivot
+
+            i = low + 1;
+            j = high;
+
+            pivot = arr[low];
+
+            while (i <= j)
+            {
 
